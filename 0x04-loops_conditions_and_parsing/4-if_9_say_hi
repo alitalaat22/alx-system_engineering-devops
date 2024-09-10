@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# This script displays "Best School" 10 times, and on the 9th iteration, it displays "Hi" on a new line
+
+count=1
+#تعريف متغير اعد
+
+while [ $count -le 10 ]
+#تستمر الحلقة طالما ان count اقل من او يساوي 10
+do
+	echo "Best SChool"
+	# عرض النض "best school"
+
+	if [ $count -eq 9 ]
+	#شرط ازا كان العد يساوي 9 
+	then
+		echo "Hi" 
+		#عرض النص "Hi" في السطر التاسع 
+	fi
+
+	count=$(($count + 1))
+	#زيادة قيمة العد بمقدار 1
+done
