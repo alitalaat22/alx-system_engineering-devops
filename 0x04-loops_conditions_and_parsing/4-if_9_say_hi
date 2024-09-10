@@ -7,7 +7,7 @@ count=1
 while [ $count -le 10 ];
 #تستمر الحلقة طالما ان count اقل من او يساوي 10
 do
-	echo "Best SChool"
+	echo "Best School"
 	# عرض النض "best school"
 
 		if [ $count -eq 9 ]
