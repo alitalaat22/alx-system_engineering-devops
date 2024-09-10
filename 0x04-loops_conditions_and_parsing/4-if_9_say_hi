@@ -4,7 +4,7 @@
 count=1
 #تعريف متغير اعد
 
-while [ $count -le 10 ]
+while [ $count -le 10 ];
 #تستمر الحلقة طالما ان count اقل من او يساوي 10
 do
 	echo "Best SChool"
