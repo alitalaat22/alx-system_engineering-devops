@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+#السكريبد ده بيدور من 1 الي 10 وبيعرض رسايل معينة للدورة 4 و 8 
+# ولو كان رقم غير ده بيعرض bsest school
+
+i=1
+while [ $i -le 10 ];
+do
+		if [ $i -eq 4 ];
+		then
+			echo "bad luck"
+		elif [ $i -eq 8 ];
+		then
+			echo "good luck"
+		else
+			echo "Best School"
+		fi
+	i=$((i + 1))
+done
