@@ -10,13 +10,13 @@ do
 	echo "Best SChool"
 	# عرض النض "best school"
 
-	if [ $count -eq 9 ]
-	#شرط ازا كان العد يساوي 9 
-	then
-		echo "Hi" 
-		#عرض النص "Hi" في السطر التاسع 
-	fi
+		if [ $count -eq 9 ]
+		#شرط ازا كان العد يساوي 9 
+		then
+			echo "Hi" 
+			#عرض النص "Hi" في السطر التاسع 
+		fi
 
-	count=$(($count + 1))
-	#زيادة قيمة العد بمقدار 1
+		count=$(($count + 1))
+		#زيادة قيمة العد بمقدار 1
 done
