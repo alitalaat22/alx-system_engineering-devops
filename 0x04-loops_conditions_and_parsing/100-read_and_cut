@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Read and cut script
+
+# قراءة كل سطر في الملف /etc/passwd
+while IFS=: read -r username _ userid _ _ home_dir _; do
+    # عرض اسم المستخدم، معرّف المستخدم، ومسار الدليل الرئيسي
+    echo "$username:$userid:$home_dir"
+done < /etc/passwd

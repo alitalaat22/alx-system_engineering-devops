@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Let's parse Apache logs script
+
+# استخدام awk لقراءة السجل واستخراج عنوان IP ورمز الحالة HTTP
+awk '{print $1, $9}' apache-access.log

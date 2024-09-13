@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Dig the data script
+
+# استخدام awk لتحليل السجل وحساب التكرارات
+awk '{print $1, $9}' apache-access.log | \
+    sort | \
+    uniq -c | \
+    sort -nr
