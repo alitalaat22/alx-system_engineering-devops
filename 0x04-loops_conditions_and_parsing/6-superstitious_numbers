@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+# Initialize the counter
+i=1
+
+# Loop from 1 to 20
+while [ $i -le 20 ]; do
+    # Print the current number
+    echo $i
+    
+    # Use a case statement to check for special numbers
+    case $i in
+        4)
+            echo "bad luck from China"
+            ;;
+        9)
+            echo "bad luck from Japan"
+            ;;
+        17)
+            echo "bad luck from Italy"
+            ;;
+    esac
+    
+    # Increment the counter
+    i=$((i + 1))
+done
