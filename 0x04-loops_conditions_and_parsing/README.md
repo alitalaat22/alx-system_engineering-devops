@@ -1,15 +1,8 @@
 hello its bash scripting
-read_and_cut
-tell_the_story_of_passwd
-lets_parse_apache_logs
-dig_the-data
-fizzbuzz
-for_best_school
-while_best_school
-until_best_school
-if_9_say_hi
-4_bad_luck_8_is_your_chance
-superstitious_numbers
-clock
-for_ls
-to_file_or_not_to_file
+#!/usr/bin/env bash
+# print list of files
+place=$(ls)
+for i in $place
+do
+    echo "$i" | cut -d "-" -f 2
+done

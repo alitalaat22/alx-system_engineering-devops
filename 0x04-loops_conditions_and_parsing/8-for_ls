@@ -1,9 +1,7 @@
 #!/usr/bin/env bash
-# This script displays the part of the filenames after the first dash in the current directory
-for file in *-*; do
-  if [ -f "$file" ]; then
-    # Extract and display the part of the filename after the first dash
-    name_after_dash="${file#*-}"
-    echo "$name_after_dash"
-  fi
+# print list of files
+place=$(ls)
+for i in $place
+do
+    echo "$i" | cut -d "-" -f 2
 done
