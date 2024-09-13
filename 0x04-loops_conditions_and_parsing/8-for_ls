@@ -1,12 +1,9 @@
 #!/usr/bin/env bash
-# Iterate over files in the current directory, excluding hidden files
-
+# This script displays the part of the filenames after the first dash in the current directory
 for file in *-*; do
-  # Check if it's a regular file and not a directory
   if [ -f "$file" ]; then
-    # Extract the part of the filename after the first dash
+    # Extract and display the part of the filename after the first dash
     name_after_dash="${file#*-}"
-    # Print the result
     echo "$name_after_dash"
   fi
 done
