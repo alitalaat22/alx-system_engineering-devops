@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # Iterate over files in the current directory, excluding hidden files
+
 for file in *-*; do
   # Check if it's a regular file and not a directory
   if [ -f "$file" ]; then
