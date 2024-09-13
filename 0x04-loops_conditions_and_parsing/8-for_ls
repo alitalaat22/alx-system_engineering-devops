@@ -1,8 +1,12 @@
 #!/usr/bin/env bash
-# Display filenames in the current directory, showing only the part after the first dash
 
-for file in $(ls | grep -v '^\.' | grep '-')  # List files, exclude hidden files, and include only those with a dash
+# قائمة جميع الملفات التي تحتوي على شرطة في اسم الملف
+for file in *-*
 do
-    name_after_dash=$(echo "$file" | sed 's/^[^-]*-//')  # Extract the part after the first dash
-    echo "$name_after_dash"
+    # استبعاد الملفات المخفية
+    if [[ -f "$file" && "$file" != .* ]]; then
+        # استخراج الجزء بعد الشرطة الأولى
+        name_after_dash="${file#*-}"
+        echo "$name_after_dash"
+    fi
 done
