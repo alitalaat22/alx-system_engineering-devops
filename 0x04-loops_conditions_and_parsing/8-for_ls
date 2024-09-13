@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
-# قائمة جميع الملفات التي تحتي على شرطة في اسم الملف
-for file in *-*; do
-    # التحقق من أن الملف ليس مخفيًا
-    if [[ -f "$file" && "$file" != .* ]]; then
-        # استخراج الجزء بعد الشرطة الأولى
-        name_after_dash="${file#*-}"
-        echo "$name_after_dash"
-    fi
+# Iterate over files that are not hidden and contain a dash
+for file in [0-9]*-*; do
+  # Check if it's a file and not a directory
+  if [ -f "$file" ]; then
+    # Extract the part after the first dash
+    name_after_dash="${file#*-}"
+    # Print the result
+    echo "$name_after_dash"
+  fi
 done
