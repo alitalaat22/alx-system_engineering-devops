@@ -1,10 +1,9 @@
 #!/usr/bin/env bash
 
 # قائمة جميع الملفات التي تحتوي على شرطة في اسم الملف
-for file in *-*
-do
-    # استبعاد الملفات المخفية
-    if [[ -f "$file" && "$file" != .* ]]; then
+for file in *-*; do
+    # استبعاد الملفات المخفية والملفات التي لا تحتوي على شرطة
+    if [[ -f "$file" && "$file" != .* && "$file" == *-* ]]; then
         # استخراج الجزء بعد الشرطة الأولى
         name_after_dash="${file#*-}"
         echo "$name_after_dash"
