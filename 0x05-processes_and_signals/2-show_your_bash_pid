@@ -1,0 +1,5 @@
+#!/bin/bash
+# shellcheck disable=SC2009
+
+# عرض جميع العمليات وتصفية العمليات التي تحتوي على 'bash'
+ps -ef | grep bash
