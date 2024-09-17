@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-#diaplay alis of currently running processes
+# This script displays a list of currently running processes
 
-ps -e -o user,pid,%cpu,%mem,vsz,rss,tty,stat,start,time,command --sort=user | head -n 50
+ps auxf
