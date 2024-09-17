@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#diaplay alis of currently running processes
+
+ps -e -f --forest
