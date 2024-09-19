@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#func to displays a bash process id
+pgrep bash -l
